@@ -24,7 +24,7 @@ namespace Quản_lý_điểm_sinh_vien_CNTT
         {
             string conect = SystemInformation.UserDomainName.ToString();
 
-            string source = "Data Source=LINHNQB;Initial Catalog=Quanlydiem;Integrated Security=True";       
+            string source = "Data Source=LINHNQB;Initial Catalog=QuanLyDiem;Integrated Security=True";       
             conn = new SqlConnection(source);
             conn.Open();            
             return conn;   

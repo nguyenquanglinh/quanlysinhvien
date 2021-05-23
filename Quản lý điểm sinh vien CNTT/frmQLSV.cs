@@ -23,15 +23,14 @@ namespace Quản_lý_điểm_sinh_vien_CNTT
 
         private void frmQLSV_Load(object sender, EventArgs e)
         {
-            conn=cc.Connected();
+            conn = cc.Connected();
             //Add du lieu vao cboKhoa
             string select = "Select MaKhoa from tblKHOA ";
             SqlCommand cmd = new SqlCommand(select, conn);
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
-                
-                cboKhoahoc.Items.Add(reader.GetString(0));
+                cboKhoahoc.Items.Add(reader.GetInt32(0));
             }
             reader.Dispose();
             cmd.Dispose();
@@ -43,14 +42,13 @@ namespace Quản_lý_điểm_sinh_vien_CNTT
             SqlDataReader reader1 = cmd1.ExecuteReader();
             while (reader1.Read())
             {
-
-                cboMalop.Items.Add(reader1.GetString(0));
+                cboLop.Items.Add(reader1.GetInt32(0));
             }
             reader1.Dispose();
             cmd1.Dispose();
             //Load lai du lieu
             FillDataGridView_SV();
-            
+
         }
 
 
@@ -83,7 +81,7 @@ namespace Quản_lý_điểm_sinh_vien_CNTT
             }
             else if (reader2.Read())
             {
-                MessageBox.Show("Bạn đã nhập trùng mã sinh viên ", "Thông báo !",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                MessageBox.Show("Bạn đã nhập trùng mã sinh viên ", "Thông báo !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtMaSV.Focus();
                 cmd2.Dispose();
                 reader2.Dispose();
@@ -112,12 +110,12 @@ namespace Quản_lý_điểm_sinh_vien_CNTT
             //Load lai du lieu
             FillDataGridView_SV();
 
-            
+
         }
         public void FillDataGridView_SV()
         {
             // Thực hiện truy vấn
-            string select = "Select * From tblSINH_VIEN  ";
+            string select = "Select * From tblSINH_VIEN";
             SqlCommand cmd = new SqlCommand(select, conn);
 
             // Tạo đối tượng DataSet
@@ -179,24 +177,24 @@ namespace Quản_lý_điểm_sinh_vien_CNTT
         {
             errorProvider1.Clear();
             if (txtMaSV.Text == "")
-            errorProvider1.SetError(txtMaSV, "Mã sinh viên không để trống!");
+                errorProvider1.SetError(txtMaSV, "Mã sinh viên không để trống!");
             else if (cboMalop.Text == "")
-            errorProvider1.SetError(cboMalop, "Mã lớp không để trống!");
+                errorProvider1.SetError(cboMalop, "Mã lớp không để trống!");
 
 
             else
             {
-            // Thực hiện truy vấn
-            string update = "Update tblSINH_VIEN Set HoTen=N'" + txtHoTen.Text + "',NgaySinh='" +
-                            mskNgaySinh.Text + "',GioiTinh=N'" + cboGioiTinh.Text + "',DiaChi=N'" +
-                            txtDiaChi.Text + "',MaLop='" + cboMalop.Text + "'where MaSV='" + txtMaSV.Text + "'";
-            SqlCommand cmd = new SqlCommand(update, conn);
-            cmd.ExecuteNonQuery();
-            MessageBox.Show("Cập nhật dữ liệu thành công", "Thông báo!");
-            //Load lai du lieu
-            FillDataGridView_SV();
-            // Trả tài nguyên
-            cmd.Dispose();
+                // Thực hiện truy vấn
+                string update = "Update tblSINH_VIEN Set HoTen=N'" + txtHoTen.Text + "',NgaySinh='" +
+                                mskNgaySinh.Text + "',GioiTinh=N'" + cboGioiTinh.Text + "',DiaChi=N'" +
+                                txtDiaChi.Text + "',MaLop='" + cboMalop.Text + "'where MaSV='" + txtMaSV.Text + "'";
+                SqlCommand cmd = new SqlCommand(update, conn);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Cập nhật dữ liệu thành công", "Thông báo!");
+                //Load lai du lieu
+                FillDataGridView_SV();
+                // Trả tài nguyên
+                cmd.Dispose();
             }
 
 
@@ -211,20 +209,20 @@ namespace Quản_lý_điểm_sinh_vien_CNTT
             //Add vao cboLop
             while (reader.Read())
             {
-                
-                cboLop.Items.Add(reader.GetString(0));
+
+                cboLop.Items.Add(reader.GetInt32(0));
             }
             //Tra tai nguyen 
             reader.Dispose();
             cmd.Dispose();
-            
+
 
         }
 
         private void cboLop_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Thực hiện truy vấn
-            string select = "Select * From tblSINH_VIEN  where MaLop='"+ cboLop.Text +"'";
+            string select = "Select * From tblSINH_VIEN  where MaLop='" + cboLop.Text + "'";
             SqlCommand cmd = new SqlCommand(select, conn);
 
             // Tạo đối tượng DataSet

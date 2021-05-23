@@ -90,15 +90,12 @@ namespace Quản_lý_điểm_sinh_vien_CNTT
         private void frmLop_Khoa_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'quanlydiemDataSet50.tblKHOA' table. You can move, or remove it, as needed.
-            this.tblKHOATableAdapter.Fill(this.quanlydiemDataSet50.tblKHOA);
 
             conn = cc.Connected();
+            LoadData();
         }
-
-        private void button3_Click(object sender, EventArgs e)
+        private void LoadData()
         {
-            //Kiem tra 
-
             string select1 = "Select MaKhoa from tblLOP where MaKhoa='" + txtKhoa.Text + "' ";
             SqlCommand cmd1 = new SqlCommand(select1, conn);
             SqlDataReader reader1 = cmd1.ExecuteReader();
@@ -106,7 +103,7 @@ namespace Quản_lý_điểm_sinh_vien_CNTT
             if (reader1.Read())
             {
                 {
-                    MessageBox.Show("Bạn phải xóa Mã Khoa "+ txtKhoa.Text +"từ bảng Lớp","Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Bạn phải xóa Mã Khoa " + txtKhoa.Text + "từ bảng Lớp", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                 }
             }
@@ -126,6 +123,13 @@ namespace Quản_lý_điểm_sinh_vien_CNTT
             }
             reader1.Dispose();
             cmd1.Dispose();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //Kiem tra 
+            MessageBox.Show("frmKhoa button3_Click");
+        
         }
 
         private void button2_Click(object sender, EventArgs e)

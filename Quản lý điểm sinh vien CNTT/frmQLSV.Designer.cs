@@ -32,14 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQLSV));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgrDSSV = new System.Windows.Forms.DataGridView();
-            this.maSvDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hoTenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngaySinhDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gioiTinhDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.diaChiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.maLopDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tblSINHVIENBindingSource8 = new System.Windows.Forms.BindingSource(this.components);
-            this.quanlydiemDataSet5 = new Quản_lý_điểm_sinh_vien_CNTT.QuanlydiemDataSet5();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.mskNgaySinh = new System.Windows.Forms.MaskedTextBox();
             this.cboGioiTinh = new System.Windows.Forms.ComboBox();
@@ -57,7 +50,6 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
-            this.tblSINH_VIENTableAdapter5 = new Quản_lý_điểm_sinh_vien_CNTT.QuanlydiemDataSet5TableAdapters.tblSINH_VIENTableAdapter();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -68,7 +60,6 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgrDSSV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblSINHVIENBindingSource8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanlydiemDataSet5)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -86,68 +77,17 @@
             // 
             // dgrDSSV
             // 
-            this.dgrDSSV.AutoGenerateColumns = false;
             this.dgrDSSV.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dgrDSSV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgrDSSV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.maSvDataGridViewTextBoxColumn,
-            this.hoTenDataGridViewTextBoxColumn,
-            this.ngaySinhDataGridViewTextBoxColumn,
-            this.gioiTinhDataGridViewTextBoxColumn,
-            this.diaChiDataGridViewTextBoxColumn,
-            this.maLopDataGridViewTextBoxColumn});
-            this.dgrDSSV.DataSource = this.tblSINHVIENBindingSource8;
             this.dgrDSSV.Location = new System.Drawing.Point(6, 19);
             this.dgrDSSV.Name = "dgrDSSV";
             this.dgrDSSV.Size = new System.Drawing.Size(514, 304);
             this.dgrDSSV.TabIndex = 0;
             this.dgrDSSV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // maSvDataGridViewTextBoxColumn
-            // 
-            this.maSvDataGridViewTextBoxColumn.DataPropertyName = "MaSv";
-            this.maSvDataGridViewTextBoxColumn.HeaderText = "MaSv";
-            this.maSvDataGridViewTextBoxColumn.Name = "maSvDataGridViewTextBoxColumn";
-            // 
-            // hoTenDataGridViewTextBoxColumn
-            // 
-            this.hoTenDataGridViewTextBoxColumn.DataPropertyName = "HoTen";
-            this.hoTenDataGridViewTextBoxColumn.HeaderText = "HoTen";
-            this.hoTenDataGridViewTextBoxColumn.Name = "hoTenDataGridViewTextBoxColumn";
-            // 
-            // ngaySinhDataGridViewTextBoxColumn
-            // 
-            this.ngaySinhDataGridViewTextBoxColumn.DataPropertyName = "NgaySinh";
-            this.ngaySinhDataGridViewTextBoxColumn.HeaderText = "NgaySinh";
-            this.ngaySinhDataGridViewTextBoxColumn.Name = "ngaySinhDataGridViewTextBoxColumn";
-            // 
-            // gioiTinhDataGridViewTextBoxColumn
-            // 
-            this.gioiTinhDataGridViewTextBoxColumn.DataPropertyName = "GioiTinh";
-            this.gioiTinhDataGridViewTextBoxColumn.HeaderText = "GioiTinh";
-            this.gioiTinhDataGridViewTextBoxColumn.Name = "gioiTinhDataGridViewTextBoxColumn";
-            // 
-            // diaChiDataGridViewTextBoxColumn
-            // 
-            this.diaChiDataGridViewTextBoxColumn.DataPropertyName = "DiaChi";
-            this.diaChiDataGridViewTextBoxColumn.HeaderText = "DiaChi";
-            this.diaChiDataGridViewTextBoxColumn.Name = "diaChiDataGridViewTextBoxColumn";
-            // 
-            // maLopDataGridViewTextBoxColumn
-            // 
-            this.maLopDataGridViewTextBoxColumn.DataPropertyName = "MaLop";
-            this.maLopDataGridViewTextBoxColumn.HeaderText = "MaLop";
-            this.maLopDataGridViewTextBoxColumn.Name = "maLopDataGridViewTextBoxColumn";
-            // 
             // tblSINHVIENBindingSource8
             // 
             this.tblSINHVIENBindingSource8.DataMember = "tblSINH_VIEN";
-            this.tblSINHVIENBindingSource8.DataSource = this.quanlydiemDataSet5;
-            // 
-            // quanlydiemDataSet5
-            // 
-            this.quanlydiemDataSet5.DataSetName = "QuanlydiemDataSet5";
-            this.quanlydiemDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // groupBox2
             // 
@@ -173,7 +113,6 @@
             // mskNgaySinh
             // 
             this.mskNgaySinh.Location = new System.Drawing.Point(95, 109);
-            this.mskNgaySinh.Mask = "00/00/0000";
             this.mskNgaySinh.Name = "mskNgaySinh";
             this.mskNgaySinh.Size = new System.Drawing.Size(133, 20);
             this.mskNgaySinh.TabIndex = 3;
@@ -228,6 +167,7 @@
             // 
             this.txtMaSV.Location = new System.Drawing.Point(95, 44);
             this.txtMaSV.Name = "txtMaSV";
+            this.txtMaSV.ReadOnly = true;
             this.txtMaSV.Size = new System.Drawing.Size(133, 20);
             this.txtMaSV.TabIndex = 1;
             // 
@@ -333,10 +273,6 @@
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // tblSINH_VIENTableAdapter5
-            // 
-            this.tblSINH_VIENTableAdapter5.ClearBeforeFill = true;
-            // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
@@ -424,7 +360,6 @@
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgrDSSV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblSINHVIENBindingSource8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quanlydiemDataSet5)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
@@ -453,15 +388,8 @@
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.DataGridView dgrDSSV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn maSvDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn hoTenDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ngaySinhDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn gioiTinhDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn diaChiDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn maLopDataGridViewTextBoxColumn;
-        private QuanlydiemDataSet5 quanlydiemDataSet5;
         private System.Windows.Forms.BindingSource tblSINHVIENBindingSource8;
-        private Quản_lý_điểm_sinh_vien_CNTT.QuanlydiemDataSet5TableAdapters.tblSINH_VIENTableAdapter tblSINH_VIENTableAdapter5;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label9;

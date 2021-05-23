@@ -38,16 +38,14 @@ namespace Quản_lý_điểm_sinh_vien_CNTT
         private void frmGiangVien_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'quanlydiemDataSet24.tblGIANG_VIEN' table. You can move, or remove it, as needed.
-            this.tblGIANG_VIENTableAdapter3.Fill(this.quanlydiemDataSet24.tblGIANG_VIEN);
        
           
             conn = cc.Connected();
-            
+            //this.dgrDSGV=
+            LoadData();
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void LoadData()
         {
-
             //Kiem tra trung ten MaSV
             string select2 = "Select * From tblGIANG_VIEN where MaGV='" + txtMaGV.Text + "'";
             SqlCommand cmd2 = new SqlCommand(select2, conn);
@@ -90,6 +88,11 @@ namespace Quản_lý_điểm_sinh_vien_CNTT
             reader2.Dispose();
             //Fill du lieu 
             FillDataGridView_SV();
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("frmGiangVien button1_Click");
+           
         }
 
         private void txtHoTen_TextChanged(object sender, EventArgs e)

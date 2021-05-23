@@ -24,24 +24,11 @@ namespace Quản_lý_điểm_sinh_vien_CNTT
         private void frmMonHoc_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'quanlydiemDataSet52.tblMON' table. You can move, or remove it, as needed.
-            this.tblMONTableAdapter.Fill(this.quanlydiemDataSet52.tblMON);
             conn = cc.Connected();
-
-            
-            string select = "Select MaKhoa from tblKHOA ";
-            SqlCommand cmd = new SqlCommand(select, conn);
-            SqlDataReader reader = cmd.ExecuteReader();
-            while (reader.Read())
-            {
-
-                cboKhoa.Items.Add(reader.GetString(0));
-            }
-            reader.Dispose();
-            cmd.Dispose();
+            LoadData();
 
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void LoadData()
         {
             string select1 = "Select MaMon from tblMON where MaMon='" + txtMaMon.Text + "' ";
             SqlCommand cmd1 = new SqlCommand(select1, conn);
@@ -85,6 +72,11 @@ namespace Quản_lý_điểm_sinh_vien_CNTT
             }
             reader1.Dispose();
             cmd1.Dispose();
+            FillDataGridView_MON();
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("frmMonHoc button1_Click");
         }
         public void FillDataGridView_MON()
         {

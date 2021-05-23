@@ -29,7 +29,6 @@ namespace Quản_lý_điểm_sinh_vien_CNTT
         private void frmLop_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'quanlydiemDataSet37.tblLOP' table. You can move, or remove it, as needed.
-            this.tblLOPTableAdapter.Fill(this.quanlydiemDataSet37.tblLOP);
          
             conn = cc.Connected();
             //Add du lieu vao cboKhoaHoc

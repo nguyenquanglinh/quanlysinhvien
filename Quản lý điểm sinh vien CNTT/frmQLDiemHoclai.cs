@@ -52,7 +52,6 @@ namespace Quản_lý_điểm_sinh_vien_CNTT
         private void frmQLDiem_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'quanlydiemDataSet48.tblKET_QUA3' table. You can move, or remove it, as needed.
-            this.tblKET_QUA3TableAdapter1.Fill(this.quanlydiemDataSet48.tblKET_QUA3);
                       
             conn = cc.Connected();
             //Add du lieu vao cboKhoaHoc

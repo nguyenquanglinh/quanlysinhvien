@@ -52,27 +52,26 @@ namespace Quản_lý_điểm_sinh_vien_CNTT
         private void frmQLDiem_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'quanlydiemDataSet47.tblKET_QUA' table. You can move, or remove it, as needed.
-            this.tblKET_QUATableAdapter.Fill(this.quanlydiemDataSet47.tblKET_QUA);
   
           
             conn = cc.Connected();
 
-            //Add du lieu vao cboKhoaHoc
-            string select = "Select MaKhoa from tblKHOA ";
-            SqlCommand cmd = new SqlCommand(select, conn);
-            SqlDataReader reader = cmd.ExecuteReader();
-            while (reader.Read())
-            {
+            ////Add du lieu vao cboKhoaHoc
+            //string select = "Select MaKhoa from tblKHOA ";
+            //SqlCommand cmd = new SqlCommand(select, conn);
+            //SqlDataReader reader = cmd.ExecuteReader();
+            //while (reader.Read())
+            //{
 
-                cboKhoaHoc.Items.Add(reader.GetString(0));
-            }
-            reader.Dispose();
-            cmd.Dispose();
+            //    cboKhoaHoc.Items.Add(reader.GetString(0));
+            //}
+            //reader.Dispose();
+            //cmd.Dispose();
 
 
-            //Load lai du lieu
-            FillDataGridView_Diem();
-
+            ////Load lai du lieu
+            //FillDataGridView_Diem();
+            LoadData();
         }
 
         private void cboNamHoc_SelectedIndexChanged(object sender, EventArgs e)
@@ -98,25 +97,21 @@ namespace Quản_lý_điểm_sinh_vien_CNTT
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void LoadData()
         {
-
-
-            //Kiem tra trung ten MonHoc va MASV
-
-            string select1 = "Select MaSV from tblSINH_VIEN where MaSV=N'" + txtMaSV.Text + "' and Hoten=N'"+ txtHoTen.Text +"' ";
+            string select1 = "Select MaSV from tblSINH_VIEN where MaSV=N'" + txtMaSV.Text + "' and Hoten=N'" + txtHoTen.Text + "' ";
             SqlCommand cmd1 = new SqlCommand(select1, conn);
             SqlDataReader reader1 = cmd1.ExecuteReader();
             errorProvider1.Clear();
             if (txtMaSV.Text == "")
             {
-                errorProvider1.SetError(txtMaSV,"Mã sinh viên không để trống!");
+                errorProvider1.SetError(txtMaSV, "Mã sinh viên không để trống!");
                 txtMaSV.Focus();
             }
             else if (txtMaSV.Text == dgrDiem.CurrentRow.Cells[0].Value.ToString() && cboMonHoc.Text == dgrDiem.CurrentRow.Cells[3].Value.ToString())
             {
                 {
-                    MessageBox.Show("Sinh viên này đã được nhập điểm môn: " + cboMonHoc.Text,"Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                    MessageBox.Show("Sinh viên này đã được nhập điểm môn: " + cboMonHoc.Text, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtMaSV.Focus();
 
                 }
@@ -170,6 +165,11 @@ namespace Quản_lý_điểm_sinh_vien_CNTT
             cmd1.Dispose();
             //Load lai du lieu
             FillDataGridView_Diem();
+        }
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //Kiem tra trung ten MonHoc va MASV
+            MessageBox.Show("frmQLDiem button1_Click");
         }
 
         public void FillDataGridView_Diem()

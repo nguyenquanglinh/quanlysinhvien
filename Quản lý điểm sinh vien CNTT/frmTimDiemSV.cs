@@ -22,7 +22,6 @@ namespace Quản_lý_điểm_sinh_vien_CNTT
         private void frmTimDiemSV_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'quanlydiemDataSet49.tblKET_QUA' table. You can move, or remove it, as needed.
-            this.tblKET_QUATableAdapter.Fill(this.quanlydiemDataSet49.tblKET_QUA);
 
             conn = cc.Connected();
 
