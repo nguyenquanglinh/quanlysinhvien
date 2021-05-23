@@ -1,0 +1,36 @@
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\bin\Release\Quản lý điểm sinh vien CNTT.exe.config
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\bin\Release\Quản lý điểm sinh vien CNTT.exe
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\bin\Release\Quản lý điểm sinh vien CNTT.pdb
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\bin\Release\Microsoft.Office.Interop.Excel.dll
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\bin\Release\Microsoft.ReportViewer.Common.dll
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\bin\Release\Microsoft.ReportViewer.WinForms.dll
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\bin\Release\office.dll
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\bin\Release\Microsoft.Vbe.Interop.dll
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\bin\Release\ADODB.dll
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\bin\Release\stdole.dll
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\bin\Release\Microsoft.Office.Interop.Excel.xml
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\bin\Release\Microsoft.ReportViewer.WinForms.xml
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\bin\Release\office.xml
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\obj\Release\Quản_lý_điểm_sinh_vien_CNTT.frmDangNhap.resources
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\obj\Release\Quản_lý_điểm_sinh_vien_CNTT.frmDoiMatKhau.resources
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\obj\Release\Quản_lý_điểm_sinh_vien_CNTT.frmDSThiLai.resources
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\obj\Release\Quản_lý_điểm_sinh_vien_CNTT.frmGiangVien.resources
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\obj\Release\Quản_lý_điểm_sinh_vien_CNTT.frmLop.resources
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\obj\Release\Quản_lý_điểm_sinh_vien_CNTT.frmKhoa.resources
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\obj\Release\Quản_lý_điểm_sinh_vien_CNTT.frmMain.resources
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\obj\Release\Quản_lý_điểm_sinh_vien_CNTT.frmMonHoc.resources
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\obj\Release\Quản_lý_điểm_sinh_vien_CNTT.frmQLDiem.resources
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\obj\Release\Quản_lý_điểm_sinh_vien_CNTT.frmQLDiemHoclai.resources
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\obj\Release\Quản_lý_điểm_sinh_vien_CNTT.frmQLDiemThiLai.resources
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\obj\Release\Quản_lý_điểm_sinh_vien_CNTT.frmQLSV.resources
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\obj\Release\Quản_lý_điểm_sinh_vien_CNTT.frmQuanLyNguoiDung.resources
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\obj\Release\Quản_lý_điểm_sinh_vien_CNTT.frmTimDiemSV.resources
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\obj\Release\Quản_lý_điểm_sinh_vien_CNTT.Properties.Resources.resources
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\obj\Release\Quản_lý_điểm_sinh_vien_CNTT.ReportDSSV.resources
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\obj\Release\Quản_lý_điểm_sinh_vien_CNTT.ReportDSThilai.resources
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\obj\Release\Quản_lý_điểm_sinh_vien_CNTT.ReportTongKet.resources
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\obj\Release\Quản_lý_điểm_sinh_vien_CNTT.SVThilaivaHoclai.resources
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\obj\Release\Quản_lý_điểm_sinh_vien_CNTT.Trogiup.resources
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\obj\Release\Quản lý điểm sinh vien CNTT.csproj.GenerateResource.Cache
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\obj\Release\Quản lý điểm sinh vien CNTT.exe
+C:\Users\CUONG\Desktop\[cnttqn.com] Code quan ly diem sinh vien C# + bao cao\Quản lý điểm sinh vien CNTT\obj\Release\Quản lý điểm sinh vien CNTT.pdb
