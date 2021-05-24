@@ -35,7 +35,6 @@ namespace Quản_lý_điểm_sinh_vien_CNTT
             reader = cmd.ExecuteReader();
             if (reader.Read())
             {
-                MessageBox.Show("Đăng nhập vào hệ thống !", "Thông báo !");
                 frmMain frm = new frmMain();
                 frm.Show();
                 frm.mnuDN.Enabled = false;
@@ -79,15 +78,6 @@ namespace Quản_lý_điểm_sinh_vien_CNTT
                     frm.btl4.Hide();
                     frm.btl5.Hide();
                     frm.btl6.Hide();
-                    //frm.menuBarToolStripMenuItem.Checked = true;
-                    //frm.pictureBox3.Show();
-                    //frm.pictureBox2.Show();
-                    //frm.btl1.Show();
-                    //frm.btl2.Show();
-                    //frm.btl3.Show();
-                    //frm.btl4.Show();
-                    //frm.btl5.Show();
-                    //frm.btl6.Show();
                 }
                 else
                 {

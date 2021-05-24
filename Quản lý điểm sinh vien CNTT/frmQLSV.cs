@@ -54,12 +54,7 @@ namespace Quản_lý_điểm_sinh_vien_CNTT
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtMaSV.Text = dgrDSSV.CurrentRow.Cells[0].Value.ToString();
-            txtHoTen.Text = dgrDSSV.CurrentRow.Cells[1].Value.ToString();
-            mskNgaySinh.Text = dgrDSSV.CurrentRow.Cells[2].Value.ToString();
-            cboGioiTinh.Text = dgrDSSV.CurrentRow.Cells[3].Value.ToString();
-            txtDiaChi.Text = dgrDSSV.CurrentRow.Cells[4].Value.ToString();
-            cboMalop.Text = dgrDSSV.CurrentRow.Cells[5].Value.ToString();
+           
         }
 
         private void btnThemmoi_Click(object sender, EventArgs e)
@@ -250,6 +245,23 @@ namespace Quản_lý_điểm_sinh_vien_CNTT
         private void groupBox3_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void dgrDSSV_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                txtMaSV.Text = dgrDSSV.CurrentRow.Cells[0].Value.ToString();
+                txtHoTen.Text = dgrDSSV.CurrentRow.Cells[1].Value.ToString();
+                mskNgaySinh.Text = dgrDSSV.CurrentRow.Cells[2].Value.ToString();
+                cboGioiTinh.Text = dgrDSSV.CurrentRow.Cells[3].Value.ToString();
+                txtDiaChi.Text = dgrDSSV.CurrentRow.Cells[4].Value.ToString();
+                cboMalop.Text = dgrDSSV.CurrentRow.Cells[5].Value.ToString();
+            }
+            catch
+            {
+                
+            }
         }
     }
 }

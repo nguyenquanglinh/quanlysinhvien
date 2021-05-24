@@ -83,6 +83,7 @@
             this.dgrDSSV.Name = "dgrDSSV";
             this.dgrDSSV.Size = new System.Drawing.Size(514, 304);
             this.dgrDSSV.TabIndex = 0;
+            this.dgrDSSV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgrDSSV_CellClick);
             this.dgrDSSV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // tblSINHVIENBindingSource8

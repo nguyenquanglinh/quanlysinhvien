@@ -38,7 +38,7 @@ namespace Quản_lý_điểm_sinh_vien_CNTT
             while (reader.Read())
             {
 
-               cboKhoa.Items.Add(reader.GetString(0));
+               cboKhoa.Items.Add(reader.GetInt32(0));
             }
             reader.Dispose();
             cmd.Dispose();
